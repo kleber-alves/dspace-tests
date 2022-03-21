@@ -11,11 +11,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        with:
-          path: dspace
-      
-      - name: Change Directory
-        run: cd dspace
       
       - name: Compile
         run: mvn clean package
