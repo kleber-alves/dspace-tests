@@ -17,6 +17,8 @@ jobs:
           # password: ${{ secrets.PASSWORD }}
           key: ${{ secrets.KEY }}
           script: |
+            rm -rf dspace_source
             mkdir dspace_source && cd dspace_source
             git clone ${{ secrets.REPOSITORY }}
+            ./dspace/build-dspace.sh
             
