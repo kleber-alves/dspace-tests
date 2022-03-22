@@ -31,7 +31,7 @@ jobs:
       - name: Deploy Up
         run: docker-compose -f "docker-compose.yml" up -d
 
-      - name: Down Down
+      - name: Deploy Down
         run: docker-compose -f "docker-compose.yml" down
 
      
