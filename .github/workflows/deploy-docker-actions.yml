@@ -3,7 +3,8 @@ name: Deploy with Docker
 on:
   push:
     branches:
-      - main
+      # - main
+      - 'releases/**'
 
 jobs:
   deploy:
