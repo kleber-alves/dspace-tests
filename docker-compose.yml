@@ -34,7 +34,7 @@ services:
     container_name: 
       local_dspace_miguilim
     ports:
-      - "7006:8080"
+      - "8080:8080"
     tty: 
       true
     volumes:
