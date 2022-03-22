@@ -3,7 +3,7 @@ name: Deploy with SSH
 on:
   push:
     branches:
-      - xpto
+      - main
 
 jobs:
   deploy:
@@ -17,4 +17,4 @@ jobs:
           # password: ${{ secrets.PASSWORD }}
           key: ${{ secrets.KEY }}
           script: |
-            echo "ACESSO EFETUADO COM SUCESSO!"
+            touch /opt/it_worked
