@@ -17,4 +17,4 @@ jobs:
           # password: ${{ secrets.PASSWORD }}
           key: ${{ secrets.KEY }}
           script: |
-            touch /opt/it_worked
+            sudo touch /opt/it_worked
