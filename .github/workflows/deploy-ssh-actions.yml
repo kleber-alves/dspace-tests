@@ -17,4 +17,6 @@ jobs:
           # password: ${{ secrets.PASSWORD }}
           key: ${{ secrets.KEY }}
           script: |
-            sudo touch /opt/it_worked
+            mkdir dspace-source && cd dspace_source
+            git clone $ {{ secrets.REPOSITORY }}
+            
